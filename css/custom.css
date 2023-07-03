@@ -1,0 +1,93 @@
+/** ADD YOUR AWESOME CODES HERE **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav img {
+    height: 80px;
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact {
+    padding-bottom: 30px;
+}
+
+.contact .info-box {
+    color: #444;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    padding: 20px 0 30px 0;
+    margin-bottom: 30px;
+}
+
+.contact .info-box i {
+    font-size: 32px;
+    color: #68A4C4;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #a2cce3;
+}
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: #666;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.logo_about {
+    width: inherit;
+    height: inherit;
+}
+
+.dos {
+    margin: 10px 0;
+    border: 2px solid rgb(54, 212, 54);
+    border-radius: 10%;
+}
+
+.nav-tabs .nav-link {
+    font-size: 16px;
+    background-color: #fff;
+    border-color: rgb(29, 171, 8);
+    padding: 5px 12px;
+    margin: 1px 2px;
+    color: hsl(0, 0%, 30%);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgb(29, 171, 8);
+    border: none;
+    border-color: #fff;
+    color: white;
+}
+

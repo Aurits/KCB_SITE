@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>Kiira College Butiki</title>
+<meta name="keywords" content="">
+<meta name="description" content="The official website for Kiira College Butiki">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="./images2/logo.jpeg" type="image/x-icon" />
+<link rel="apple-touch-icon" href="./images2/logo.jpeg">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script src="./js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $(".a-link").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+<style>
+    .search ul {
+        list-style: none;
+    }
+
+    .search li a {
+        text-decoration: none;
+        float: left;
+        padding: 4px;
+        font-weight: 500;
+        background-color: darkgreen;
+        border: 2px solid gray;
+        margin: 2px;
+        border-radius: 5px;
+        color: white;
+    }
+</style>
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Customer Login</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Submit
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Password"
+                                            type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Save &amp; Continue
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo6.png" alt="Kcb logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
+                                data-toggle="dropdown">Accademics </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./departments.html">Subject Departments</a>
+                                <a class="dropdown-item" href="./elearning.html">E-Learning</a>
+                                <a class="dropdown-item" href="./A'Level.html">A'Level</a>
+                                <a class="dropdown-item" href="./O'Level.html">O'Level</a>
+                                <a class="dropdown-item" href="./UNEB.html">UNEB</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Butiki
+                                Family</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="family.html">Board of Governors</a>
+                                <a class="dropdown-item" href="family.html">P.T.A</a>
+                                <a class="dropdown-item" href="family.html">Stuff MEmbers</a>
+                                <a class="dropdown-item" href="family.html">KICOBA</a>
+                                <a class="dropdown-item" href="family.html">Student Leaders</a>
+                                <a class="dropdown-item" href="family.html">Classes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Clubs &
+                                Societies</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./others.html">Debate Club</a>
+                                <a class="dropdown-item" href="./maths_index.html">Math Club</a>
+                                <a class="dropdown-item" href="./others.html">Compassion Club</a>
+                                <a class="dropdown-item" href="./others.html">Others</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+    <!-- 
+    <div class="all-title-box">
+        <div class="container text-center">
+            <h1>Course Grid 2<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
+        </div>
+    </div> -->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Academics</li>
+            </ol>
+        </nav>
+
+    </div>
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="main text-center mt-5">
+                <h6 class="heading">There are <strong>15+</strong> subject departments</h6>
+                <p class="text-info">The college provides a number of subjects to its students.</p>
+                <p class="text-info">This give them a chance to choose among the different subjects that enables them to
+                    develop various skills to enable the survive in the diverse changing world</p>
+            </div>
+
+            <div class="container-fluid justify-content-center m-auto w-50 info-box h-25 text-center">
+                <nav class="navbar navbar-light bg-light m-auto justify-content-center">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 w-150 m-2" id="myInput" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+
+
+            </div>
+
+            <div class="container-fluid m-4 d-flex justify-content-center search">
+
+                <div class="container">
+                    <h2>Tap Subject</h2>
+                </div>
+                <div class="container-fluid justify-content-center m-auto w-100 info-box ">
+                    <ul id="myList ">
+                        <li class="nav-item"><a class="a-link" href="#english">English</a></li>
+                        <li class="nav-item"><a class="a-link" href="#math">Mathematics</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Literature</a></li>
+                        <li class="nav-item"><a class="a-link" href="">CRE</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Commerce</a></li>
+                        <li class="nav-item"><a class="a-link" href="">History</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Chemistry</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Biology</a></li>
+                        <li class="nav-item"><a class="a-link" href="">French</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Fine Art</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Geography</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Physics</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Accounts</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Ent</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Economics</a></li>
+                        <li class="nav-item"><a class="a-link" href="">Computer Studies</a></li>
+                        <li class="nav-item"><a class="a-link" href="">English</a></li>
+                        <li class="nav-item"><a class="a-link" href="">English</a></li>
+                        <li class="nav-item"><a class="a-link" href="">English</a></li>
+                        <li class="nav-item"><a class="a-link" href="">English</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container mt-4 d-flex justify-content-center">
+
+                <div class="row g-0">
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success"></i>
+                                <h2 class="font-bold" id="english">English</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-calculator fa-4x text-success"></i>
+                                <h2 class="font-bold" id="maths">Mathematics</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success"></i>
+                                <h2 class="font-bold" id="literature">Literature</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container mt-4 d-flex justify-content-center">
+
+                <div class="row g-0">
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="cre">CRE</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success"></i>
+                                <h2 class="font-bold" id="chemistry">Chemistry</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="biology">Biology</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container mt-4 d-flex justify-content-center">
+
+                <div class="row g-0">
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="french">French</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="art">Fine Art</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="physics">Physics</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container mt-4 d-flex justify-content-center">
+
+                <div class="row g-0">
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="accounts">Accounts</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="economics">Economics</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="computer">Computer Studies</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container mt-4 d-flex justify-content-center">
+
+                <div class="row g-0">
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="agriculture">Agriculture</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="cre">CRE</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="cre">CRE</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container mt-4 d-flex justify-content-center">
+
+                <div class="row g-0">
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="cre">CRE</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="cre">CRE</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+
+                            <div class="first bg-white p-4 text-center">
+                                <i class="fa fa-book fa-4x text-success "></i>
+                                <h2 class="font-bold" id="cre">CRE</h2>
+                                <p class="line1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eligendi mollitia soluta reiciendis odio, placeat corporis ut dolor facilis laboriosam.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Kiira College Butiki (KCB) commonly referred to as Butiki, is an all-boys boarding public
+                            secondary school (high school) located in Jinja district, in the Eastern region of Uganda.
+                        </p>
+
+                        <p> The school is located on Butiki hill, in Namulesa trading center, along the Jinja-Kamuli
+                            Highway. It is approximately 14 kilometers (approx. 8.7 miles) from Jinja town</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                            <!-- end links -->
+                        </div>
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="#">Accademics</a></li>
+                            <li><a href="#">Accademics</a></li>
+                            <li><a href="#">Butiki Family</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="#">Clubs & Societies</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        <!-- end links -->
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">kc_butiki@yahoo.com</a></li>
+                            <li><a href="#">www.yoursite.com</a></li>
+                            <li>P.O BOX </li>KIIRA COLLEGE BUTIKI </li>
+                            <li> 0392-280431</li>
+                        </ul>
+                        <!-- end links -->
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2022<a href="#">KIIRA COLLEGE BUTIKI</a>
+                        Design By : <a href="https://html.design/"> Solve4X</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

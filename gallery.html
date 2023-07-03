@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title discription="">KIIRA COLLEGE BUTIKI</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="./images2/logo.jpeg" type="image/x-icon" />
+<link rel="apple-touch-icon" href="./images2/logo.jpeg">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+    .gallery-title {
+        font-size: 36px;
+        color: darkgreenss;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 70px;
+    }
+
+    .gallery-title:after {
+        content: "";
+        position: absolute;
+        width: 22.5%;
+        left: 38.5%;
+        height: 45px;
+        border-bottom: 1px solid #5e5e5e;
+    }
+
+    .filter-button {
+        font-size: 18px;
+        border: 1px solid darkgreen;
+        border-radius: 5px;
+        text-align: center;
+        color: darkgreen;
+        margin-bottom: 30px;
+    }
+
+    .filter-button:hover {
+        font-size: 18px;
+        border: 1px solid darkgreen;
+        border-radius: 5px;
+        text-align: center;
+        color: #ffffff;
+        background-color: darkgreen;
+    }
+
+    .btn-default:active .filter-button:active {
+        background-color: darkgreen;
+        color: white;
+    }
+
+    .port-image {
+        width: 100%;
+    }
+
+    .gallery_product {
+        margin-bottom: 30px;
+    }
+
+    img {
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+</style>
+
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Customer Login</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Submit
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Password"
+                                            type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Save &amp; Continue
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <!-- <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- END LOADER -->
+
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo6.png" alt="K.B.C logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
+                                data-toggle="dropdown">Accademics </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./departments.html">Subject Departments</a>
+                                <a class="dropdown-item" href="./elearning.html">E-Learning</a>
+                                <a class="dropdown-item" href="./A'Level.html">A'Level</a>
+                                <a class="dropdown-item" href="./O'Level.html">O'Level</a>
+                                <a class="dropdown-item" href="./UNEB.html">UNEB</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Butiki
+                                Family</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="family.html">Board of Governors</a>
+                                <a class="dropdown-item" href="family.html">P.T.A</a>
+                                <a class="dropdown-item" href="family.html">Stuff MEmbers</a>
+                                <a class="dropdown-item" href="family.html">KICOBA</a>
+                                <a class="dropdown-item" href="family.html">Student Leaders</a>
+                                <a class="dropdown-item" href="family.html">Classes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Clubs &
+                                Societies</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./others.html">Debate Club</a>
+                                <a class="dropdown-item" href="maths_index.html">Math Club</a>
+                                <a class="dropdown-item" href="./others.html">Compassion Club</a>
+                                <a class="dropdown-item" href="./others.html">Others</a>
+                            </div>
+                        <li class="nav-item active"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="all-title-box">
+        <div class="container text-center">
+            <h1>Butiki Album<span class="m_1"><strong>1959-2022 Gallery</strong></span></h1>
+        </div>
+    </div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section-title text-center">
+                    <h3 class="title">Butiki moments</h3>
+                    <p class="lead sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique
+                        dolor, Asperiores, voluptatum!</p>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="container">
+
+                        <div align="center">
+
+
+                            <button class="btn btn-default filter-button" data-filter="stud">Students</button>
+
+                            <button class="btn btn-default filter-button" data-filter="staff">Staff</button>
+
+                            <button class="btn btn-default filter-button" data-filter="events">Events</button>
+
+                            <button class="btn btn-default filter-button" data-filter="houses">Houses</button>
+
+                            <button class="btn btn-default filter-button" data-filter="acts">Co-curricular
+                                Activities</button>
+
+                            <button class="btn btn-default filter-button" data-filter="all">All</button>
+
+                        </div>
+                    </div>
+                    <br />
+
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter staff">
+                        <a href="">
+
+                            <img src="./img/staff.jpg" class="img-fluid"></a>
+
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter stud">
+                        <a href="">
+
+                            <img src="./img/student-leaders.jpg" class="img-fluid"></a>
+
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter staff">
+                        <a href="">
+
+                            <img src="./imG/assets/staff_1.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter events">
+                        <a href="">
+
+                            <img src="./img/assets/sport_3.jpg" class="img-fluid"></a>
+
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter staff">
+                        <a href="">
+
+                            <img src="./img/assets/staff_2.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter staff">
+                        <a href="">
+
+                            <img src="./img/assets/staff_3.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter stud">
+                        <a href="">
+
+                            <img src="./img/assets/students_3.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter acts">
+                        <a href="">
+
+                            <img src="./img/assets/sport_1.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter events">
+                        <a href="">
+
+                            <img src="./img/assets/sport_4.jpg" class="img-fluid"></a>
+
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter stud">
+                        <a href="">
+
+                            <img src="./img/assets/students_4.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter acts">
+                        <a href="">
+
+                            <img src="./img/assets/sport_2.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses">
+                        <a href="">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-fluid" src="./img/assets/aggrey.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-success text-center"><strong> AGGREY</strong></h1>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter events">
+                        <a href="">
+
+                            <img src="./images1/maths_img/New folder/board.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter acts">
+                        <a href="">
+
+                            <img src="./images1/asset-2/TEACHING STAFF KCB.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter stud">
+                        <a href="">
+
+                            <img src="./img/assets/students.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses">
+                        <a href="">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-fluid" src="./img/assets/cohen.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-success text-center"><strong> COHEN</strong></h1>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses">
+                        <a href="">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-fluid" src="./img/assets/hm.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-success text-center"><strong>HENRY MULOKI</strong></h1>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter events">
+                        <a href="">
+
+                            <img src="./images1/maths_img/New folder/board.jpg" class="img-fluid"></a>
+
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses">
+                        <a href="">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-fluid" src="./img/assets/kyabazinga.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-success text-center"><strong>KYABAZINGA</strong></h1>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter acts">
+                        <a href="">
+
+                            <img src="./images1/maths_img/New folder/board.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses">
+                        <a href="">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-fluid" src="./img/assets/mulondo.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-success text-center"><strong>MULONDO</strong></h1>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses">
+                        <a href="">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-fluid" src="./img/assets/nile.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-success text-center"><strong> NILE</strong></h1>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+                    </div>
+
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter acts">
+                        <a href="">
+
+                            <img src="./images1/maths_img/New folder/board.jpg" class="img-fluid"></a>
+
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter stud">
+                        <a href="">
+
+                            <img src="./images1/maths_img/New folder/board.jpg" class="img-fluid"></a>
+
+                    </div>
+
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter houses">
+                        <a href="">
+
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top img-fluid" src="./img/assets/ww.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h1 class="text-success text-center"><strong>WWN</strong></h1>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end container -->
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Kiira College Butiki (KCB) commonly referred to as Butiki, is an all-boys boarding public
+                            secondary school (high school) located in Jinja district, in the Eastern region of Uganda.
+                        </p>
+
+                        <p> The school is located on Butiki hill, in Namulesa trading center, along the Jinja-Kamuli
+                            Highway. It is approximately 14 kilometers (approx. 8.7 miles) from Jinja town</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                            <!-- end links -->
+                        </div>
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+
+                            <a href="./family.html"></a>Butiki Family</li>
+                            <li><a href="#">Accademics</a></li>
+                            <a href="#">Clubs & Societies</a>
+                            <a href="./gallery.html"></a>gallery</li>
+                            <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- end links -->
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">kc_butiki@yahoo.com</a></li>
+                            <li><a href="#">www.yoursite.com</a></li>
+                            <li>P.O BOX 1181, KIIRA COLLEGE BUTIKI</li>
+                            <li> 0392-280431</li>
+                        </ul>
+                        <!-- end links -->
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2022<a href="#">KIIRA COLLEGE BUTIKI</a>
+                        Design By : <a href="https://html.design/">Solve4X</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+
+                if (value == "all") {
+
+                    $('.filter').show('1000');
+                } else {
+
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+
+        });
+    </script>
+
+
+</body>
+
+</html>

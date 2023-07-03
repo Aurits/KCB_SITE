@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title discription="The official website for Kiira College Butitki">Kiira College Butiki</title>
+<meta name="keywords" content="">
+<meta name="description" content="The official website for Kiira College Butiki">
+<meta name="Solve4X" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="./images2/logo.jpeg" type="image/x-icon" />
+<link rel="apple-touch-icon" href="./images2/logo.jpeg">
+<!-- calender -->
+<link rel="stylesheet" href="css/calender/css/evo-calendar.min.css">
+<link rel="stylesheet" href="css/calender/css/evo-calendar.midnight-blue.min.css">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Customer Login</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Submit
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Password"
+                                            type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Save &amp; Continue
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <!-- <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo6.png" alt="Kiira College Butitki" class="img-fuild" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
+                                data-toggle="dropdown">Academics </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./departments.html">Subject Departments</a>
+                                <a class="dropdown-item" href="./elearning.html">E-Learning</a>
+                                <a class="dropdown-item" href="./A'Level.html">A'Level</a>
+                                <a class="dropdown-item" href="./O'Level.html">O'Level</a>
+                                <a class="dropdown-item" href="./UNEB.html">UNEB</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Butiki
+                                Family</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="family.html">Board of Governors</a>
+                                <a class="dropdown-item" href="family.html">P.T.A</a>
+                                <a class="dropdown-item" href="family.html">Staff MEmbers</a>
+                                <a class="dropdown-item" href="family.html">KICOBA</a>
+                                <a class="dropdown-item" href="family.html">Student Leaders</a>
+                                <a class="dropdown-item" href="family.html">Classes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Clubs &
+                                Societies </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./others.html">Debate Club</a>
+                                <a class="dropdown-item" href="maths_index.html">Math Club</a>
+                                <a class="dropdown-item" href="./others.html">Compassion Club</a>
+                                <a class="dropdown-item" href="./others.html">Others</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel"
+        data-pause="hover" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div id="home" class="first-section" style="background-image:url('./img/showcase.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-right">
+                                    <div class="big-tagline">
+                                        <p class="lead">Kiira College Butiki </p>
+                                        <h2><strong>Discipline </strong> and <strong>Hardwork</strong></h2>
+                                        <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="hover-btn-new"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- end container -->
+                    </div>
+                </div>
+                <!-- end section -->
+            </div>
+            <div class="carousel-item">
+                <div id="home" class="first-section" style="background-image:url('./img/staff.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-left">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight">BUTIKI <strong>STAFF</strong></h2>
+                                        <p class="lead" data-animation="animated fadeInLeft">experienced</p>
+                                        <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="hover-btn-new"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- end container -->
+                    </div>
+                </div>
+                <!-- end section -->
+            </div>
+            <div class="carousel-item">
+                <div id="home" class="first-section" style="background-image:url('./img/student-leaders.jpg');">
+                    <div class="dtab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-center">
+                                    <div class="big-tagline">
+                                        <h2 data-animation="animated zoomInRight"><strong>Butiki</strong> Leadership
+                                        </h2>
+                                        <p class="lead" data-animation="animated fadeInLeft"></p>
+                                        <a href="#" class="hover-btn-new"><span>Contact Us</span></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#" class="hover-btn-new"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- end container -->
+                    </div>
+                </div>
+                <!-- end section -->
+            </div>
+            <!-- Left Control -->
+            <a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3><strong>Kiira College Butiki (KC-BUTIKI)</strong></h3>
+                    <p class="lead">KC-Butiki is a boys, science based Accademic instution with both O'Level And A'Level
+                    </p>
+                </div>
+            </div>
+            <!-- end title -->
+
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h4> BEST EASTERN AND SOUTHERN REGION SCHOOL</h4>
+                        <h2>Our Location</h2>
+                        <p>Kiira College Butiki (KCB) commonly referred to as Butiki, is an all-boys boarding public
+                            secondary school (high school) located in Jinja district, in the Eastern region of Uganda.
+                        </p>
+
+                        <p>The school is located on Butiki hill, in Namulesa trading center, along the Jinja-Kamuli
+                            Highway. It is approximately 14 kilometers (approx. 8.7 miles) from Jinja town</p>
+
+                        <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                    </div>
+                    <!-- end messagebox -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <div>
+                            <iframe width="500" height="400" frameborder="0"
+                                src="https://www.bing.com/maps/embed?h=400&w=500&cp=0.4768697995081226~33.18677902220702&lvl=14&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+                                scrolling="no">
+                            </iframe>
+                            <div style="white-space: nowrap; text-align: center; width: 500px; padding: 6px 0;">
+                                <a id="largeMapLink" target="_blank"
+                                    href="https://www.bing.com/maps?cp=0.4768697995081226~33.18677902220702&amp;sty=r&amp;lvl=14&amp;FORM=MBEDLD">View
+                                    Larger Map</a> &nbsp; | &nbsp;
+                                <a id="dirMapLink" target="_blank"
+                                    href="https://www.bing.com/maps/directions?cp=0.4768697995081226~33.18677902220702&amp;sty=r&amp;lvl=14&amp;rtp=~pos.0.4768697995081226_33.18677902220702____&amp;FORM=MBEDLD">Get
+                                    Directions</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end media -->
+                </div>
+                <!-- end col -->
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="./img/content.jpg" alt="KCB" class="img-fluid img-rounded">
+                    </div>
+                    <!-- end media -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2>Our
+                            <Strong>Vision</Strong> and <strong>Motto</strong>
+                        </h2>
+                        <p><strong>College Vision: </strong>To produce multi-skilled men of virtue, able to achieve
+                            their highest potential in a diverse changing world
+                        </p>
+                        <p><strong>College Mission: </strong> To provide wholesome education that transforms young men
+                            into morally upright, responsible and sociable citizens.</p>
+
+                        <p>College Motto: <strong>"Discipline and Hardwork"</strong></p>
+                        <p><strong>College Core Values: </strong><br> 1. God fearing <br>2. Self-discipline
+                            <br>3.Commitment to achieve set goals <br>4. Respect for Diversity <br>5. Integrity <br>6.
+                            Academic Excellence
+                        </p>
+
+                        <a href="#" class="hover-btn-new orange"><span>Learn More</span></a>
+                    </div>
+                    <!-- end messagebox -->
+                </div>
+                <!-- end col -->
+
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end section -->
+
+    <section class="section lb page-section">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>College History</h3>
+                    <p class="lead">The school was founded in 1959 to improve education among the Eastern Uganda boys.
+                        However, KC-Butiki has produced multi-talented men from all corners of the country </p>
+                </div>
+            </div>
+            <!-- end title -->
+            <div class="timeline">
+                <div class="timeline__wrap">
+                    <div class="timeline__items">
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-01">
+                                <h2>2018</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-02">
+                                <h2>2015</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-03">
+                                <h2>2014</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-04">
+                                <h2>2012</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-01">
+                                <h2>2010</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-02">
+                                <h2>2007</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-03">
+                                <h2>2004</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__content img-bg-04">
+                                <h2>1959</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
+                                    condimentum lacus dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section cl">
+        <div class="container">
+            <div class="row text-left stat-wrap " style="background-color: darkgreen;">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-study"></i></span>
+                    <p class="stat_count">1200</p>
+                    <h3>Students</h3>
+                </div>
+                <!-- end col -->
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i
+                            class="flaticon-online"></i></span>
+                    <p class="stat_count">350</p>
+                    <h3>Candidates</h3>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end section -->
+
+    <!-- upcomming events -->
+    <div class="container mt-5 mb-4 ">
+        <div class="section-title row text-center">
+            <div class="col-md-8 offset-md-2">
+                <h3>Events Calender</h3>
+            </div>
+        </div>
+
+        <!-- calender here -->
+        <div id="calendar"></div>
+
+
+    </div>
+
+
+    <!-- upcomming events -->
+
+    <!-- gallery start-->
+    <div class="contianer mb-5 mt-5">
+        <div class="section-title row text-center">
+            <div class="col-md-8 offset-md-2">
+                <h3>A View of the Hill</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 row">
+                <img src="./img/content.jpg" alt="" class="w-50 mb-2 mb-md-4 shadow-1-strong rounded img-fluid">
+                <img src="./img/tank.jpg" alt="" class="w-50 mb-2 mb-md-4 shadow-1-strong rounded img-fluid">
+                <img src="./img/npl.jpg" alt="" class="w-50 mb-2 mb-md-4 shadow-1-strong rounded img-fluid">
+                <img src="./img/complab.jpg" alt="road" class="w-50 mb-2 mb-md-4 shadow-1-strong rounded img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <img src="./img/gallery1.jpg" alt="Hardwork"
+                    class="w-100 mb-2 mb-md-4 shadow-1-strong rounded img-fluid">
+            </div>
+
+        </div>
+    </div>
+    <!-- gallery end -->
+
+
+    <div id="testimonials" class="parallax section db parallax-off"
+        style="background-image:url('./images2/staff.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Administration</h3>
+                <p>Kiira College Butiki has got well experienced, supportive and incredibly qualified Administration</p>
+            </div>
+            <!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="./img/hm.jpg" alt="Kisame Micheal" class="img-fluid">
+                                <h4>KISAME MICHAEL</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Head Teacher</h3>
+                                <p class="lead">saying from the Head Teacher</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="./img/hm1.jpg" alt="Nabuzale Cathy" class="img-fluid">
+                                <h4>NABUZAALE CATHY</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Deputy HM 1</h3>
+                                <p class="lead">Quote from Ms. Deputy headteacher1
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="./img/hm2.jpg" alt="ISANGA FRED" class="img-fluid ">
+                                <h4>ISANGA FRED</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Deputy HM 2</h3>
+                                <p class="lead"> Quote from deputy headteacher2</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="./img/dosA.jpg" alt="mubiru stephen" class="img-fluid">
+                                <h4>MUBIRU STEPHEN</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> DOS A'LEVEL</h3>
+                                <p class="lead">welcome remarks from Mr. Mubiru Stephen</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="./img/dosO.jpg" alt="NKUMBO JAMES" class="img-fluid">
+                                <h4>NKUMBO JAMES</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> DOS O'LEVEL</h3>
+                                <p class="lead">welcome remarks from Mr. Nkumbo James</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+
+                    </div>
+
+                    <!-- end testimonial -->
+                </div>
+                <!-- end carousel -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+    </div>
+    <!-- end section -->
+
+
+    <!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Kiira College Butiki (KCB) commonly referred to as Butiki, is an all-boys boarding public
+                            secondary school (high school) located in Jinja district, in the Eastern region of Uganda.
+                        </p>
+
+                        <p> The school is located on Butiki hill, in Namulesa trading center, along the Jinja-Kamuli
+                            Highway. It is approximately 14 kilometers (approx. 8.7 miles) from Jinja town</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+
+                            </ul>
+                            <!-- end links -->
+                        </div>
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+
+                            <li><a href="#">Academics</a></li>
+                            <li><a href="#">Clubs & Societies</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        <!-- end links -->
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">kc_butiki@yahoo.com</a></li>
+                            <li><a href="#">www.yoursite.com</a></li>
+                            <li>P.O BOX 1181, KIIRA COLLEGE BUTIKI</li>
+                            <li> 0392-280431</li>
+                        </ul>
+                        <!-- end links -->
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2022 <a href="#">KIIRA COLLEGE BUTIKI</a>
+                        Design By : <a href="https://html.design/">Solve4X</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/timeline.min.js"></script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+    </script>
+    <!-- scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="css/calender/js/evo-calendar.min.js"></script>
+    <script>
+        // Initialize evo-calendar in your script file or an inline <script> tag
+        $(document).ready(function () {
+            $('#calendar').evoCalendar({
+                theme: 'Navy Blue'
+            })
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>kIIRA COLLEGE BUTIKI</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="./images2/logo.jpeg" type="image/x-icon" />
+<link rel="apple-touch-icon" href="./images2/logo.jpeg">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/bootstrap-touch-slider.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header tit-up">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Customer Login</h4>
+                </div>
+                <div class="modal-body customer-box">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                        <li><a href="#Registration" data-toggle="tab">Registration</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Login">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email1" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="exampleInputPassword1" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+                                            Submit
+                                        </button>
+                                        <a class="for-pwd" href="javascript:;">Forgot your password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="Registration">
+                            <form role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" placeholder="Name" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="email" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="mobile" placeholder="Mobile" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <input class="form-control" id="password" placeholder="Password"
+                                            type="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Save &amp; Continue
+                                        </button>
+                                        <button type="button" class="btn btn-light btn-radius btn-brd grd1">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo6.png" alt="KCB logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
+                                data-toggle="dropdown">Accademics </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./departments.html">Subject Departments</a>
+                                <a class="dropdown-item" href="./elearning.html">E-Learning</a>
+                                <a class="dropdown-item" href="./A'Level.html">A'Level</a>
+                                <a class="dropdown-item" href="./O'Level.html">O'Level</a>
+                                <a class="dropdown-item" href="./UNEB.html">UNEB</a>
+
+                            </div>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Butiki
+                                Family</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./family.html">Board Governors</a>
+                                <a class="dropdown-item" href="./family.html">P.T.A</a>
+                                <a class="dropdown-item" href="./family.html">Stuff MEmbers</a>
+                                <a class="dropdown-item" href="./family.html">KICOBA</a>
+                                <a class="dropdown-item" href="./family.html">Student Leaders</a>
+                                <a class="dropdown-item" href="./family.html">Classes</a>
+                            </div>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Clubs &
+                                Societies</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="./others.html">Debate Club</a>
+                                <a class="dropdown-item" href="./maths_index.html">Math Club</a>
+                                <a class="dropdown-item" href="./others.html">Compassion Club</a>
+                                <a class="dropdown-item" href="./others.html">Others</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+
+    </div>
+
+
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section-title text-center">
+                    <h3 class="title">Butiki Family</h3>
+                    <p class="lead sub-title">The hill is made of families</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs bordre-0 justify-content-center mb-3" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="BOG-tab" data-bs-toggle="tab" data-bs-target="#BOG"
+                                type="button" role="tab" aria-controls="BOG" aria-selected="true">BOG</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="PTA-tab" data-bs-toggle="tab" data-bs-target="#PTA"
+                                type="button" role="tab" aria-controls="PTA" aria-selected="false">PTA</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Staff-tab" data-bs-toggle="tab" data-bs-target="#Staff"
+                                type="button" role="tab" aria-controls="Staff" aria-selected="false">Staff</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="ob-tab" data-bs-toggle="tab" data-bs-target="#ob" type="button"
+                                role="tab" aria-controls="ob" aria-selected="false">KICOBA</button>
+                        </li>
+                        <!-- <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Leaders-tab" data-bs-toggle="tab" data-bs-target="#Leaders" type="button" role="tab" aria-controls="Leaders" aria-selected="false">Leaders</button>
+                        </li> -->
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Students-tab" data-bs-toggle="tab" data-bs-target="#Students"
+                                type="button" role="tab" aria-controls="Students"
+                                aria-selected="false">Students</button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="BOG" role="tabpanel" aria-labelledby="BOG-tab">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="PTA" role="tabpanel" aria-labelledby="PTA-tab">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Staff" role="tabpanel" aria-labelledby="Staff-tab">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/assets/ass_dos.jpg">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">TOWALI JOYCE</h3>
+                                                <span class="post">Assistant DOS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/assets/head_ict.jpg">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">BAZIBU FRED</h3>
+                                                <span class="post">HOD ICT</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/exam2.jpg">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">OUMA</h3>
+                                                <span class="post">Assistant Examination Master</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="ob" role="tabpanel" aria-labelledby="ob-tab">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="tab-pane" id="Leaders" role="tabpanel" aria-labelledby="Leaders-tab">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="tab-pane" id="Students" role="tabpanel" aria-labelledby="Students-tab">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-12">
+                                        <div class="our-team">
+                                            <div class="team-img">
+                                                <img src="./img/default.png">
+                                                <div class="social">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="fa fa-facebook"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="fa fa-twitter"></a>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="team-content">
+                                                <h3 class="title">THE NAME</h3>
+                                                <span class="post">position</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end section -->
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Kiira College Butiki (KCB) commonly referred to as Butiki, is an all-boys boarding public
+                            secondary school (high school) located in Jinja district, in the Eastern region of Uganda.
+                        </p>
+
+                        <p> The school is located on Butiki hill, in Namulesa trading center, along the Jinja-Kamuli
+                            Highway. It is approximately 14 kilometers (approx. 8.7 miles) from Jinja town</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                            <!-- end links -->
+                        </div>
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</li>
+                            <li><a href="#">Accademics</a></li>
+                            <li><a href="#">Clubs & Societies</a></li>
+                            <li><a href="#">Butiki Family</a></li>
+                            <li><a href="./gallery.html">Gallery</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        <!-- end links -->
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">kc_butiki@yahoo.com</a></li>
+                            <li><a href="#">www.yoursite.com</a></li>
+                            <li>P.O BOX 1181, KIIRA COLLEGE BUTIKI</li>
+                            <li> 0392-280431</li>
+                        </ul>
+                        <!-- end links -->
+                    </div>
+                    <!-- end clearfix -->
+                </div>
+                <!-- end col -->
+
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2022<a href="#">KIIRA COLLEGE BUTIKKI</a>
+                        Design By :
+                        <a href="https://html.design/"></a>Solve4X
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
